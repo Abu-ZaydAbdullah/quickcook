@@ -1,0 +1,23 @@
+/*
+dk-orange: #de4c35;
+lt-orange: #ffbe47;
+white: #000000;
+bright-green: #bbde7e;
+grey-green: #a8b8a4;
+*/
+
+
+.header {
+  background-color: #de4c35;
+  height: 60px;
+}
+
+.ui-title {
+  font-family: 'Pacifico', serif;
+}
+
+.submit {
+  width: 75%;
+  margin: auto;
+  border-radius: 5px;
+}

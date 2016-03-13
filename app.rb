@@ -12,7 +12,7 @@ get '/results' do
 end
 
 get "/recipe" do
-  erb :card
+  erb :recipe
 end
 
 get "/profile" do

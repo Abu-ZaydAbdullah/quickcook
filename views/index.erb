@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link href="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.css" rel="stylesheet">
   <link href="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.2/jquery.mobile-1.4.2.css" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
@@ -19,22 +19,20 @@
   <script src="script.js"></script>
 </head>
 <body>
-    <div data-role="page" data-control-title="Home" id="page1">
-        <div data-theme="b" data-role="header">
-            <h1 class="ui-title">Budget Buddy</h1>
-            <a href="profile" data-icon="gear" data-iconpos="left" class="ui-btn ui-btn-right ui-icon-gear ui-btn-icon-left">
-            </a>
-        </div>
-        <div role="main" class="ui-content">
-            <div class="ui-field-contain" data-controltype="slider">
-                <label for="slider1">
-                    Input Budget
-                </label>
-                <input id="slider1" type="range" name="slider" value="50" min="0" max="50"
-                data-highlight="false">
-            </div>
-            <a href="result" class="ui-btn ">Submit</a>
-        </div>
+  <div data-role="page" data-control-title="Home" id="page1">
+    <div data-theme="b" data-role="header" class="header">
+        <h1 style="font-size: 24px;" class="ui-title">QuickCook</h1>
+        <a href="/profile" style="display: inline"><img src="/profile.png"></a>
     </div>
+    <div role="main" class="ui-content">
+      <div class="ui-field-contain" data-controltype="slider">
+        <img class="icon" src="/dollar.png" />
+        <input id="budget" type="range" name="slider" value="10" min="0" max="50" data-highlight="false">
+        <img src="/timer.png" />
+        <input id="time" type="range" name="slider" value="10" min="0" max="50" data-highlight="false">
+      </div>
+      <a href="/results" class="ui-btn submit">Submit</a>
+    </div>
+  </div>
 </body>
 </html>
